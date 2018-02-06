@@ -10,4 +10,6 @@
 
 @interface AlbumView : UIView
 
+- (id)initWithFrame:(CGRect)frame
+         albumCover:(NSString *)albumCover;
 @end
