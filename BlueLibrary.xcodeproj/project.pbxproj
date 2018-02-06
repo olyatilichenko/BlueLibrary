@@ -23,6 +23,7 @@
 		649703882029EF21001727B4 /* LibraryAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 649703872029EF21001727B4 /* LibraryAPI.m */; };
 		6497038B2029EFEB001727B4 /* PersistencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6497038A2029EFEB001727B4 /* PersistencyManager.m */; };
 		6497038E2029FE72001727B4 /* Album+TableRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6497038D2029FE72001727B4 /* Album+TableRepresentation.m */; };
+		64970392202A1DAF001727B4 /* HorizontalScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 64970391202A1DAF001727B4 /* HorizontalScroller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,8 @@
 		6497038A2029EFEB001727B4 /* PersistencyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistencyManager.m; sourceTree = "<group>"; };
 		6497038C2029FE72001727B4 /* Album+TableRepresentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Album+TableRepresentation.h"; sourceTree = "<group>"; };
 		6497038D2029FE72001727B4 /* Album+TableRepresentation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Album+TableRepresentation.m"; sourceTree = "<group>"; };
+		64970390202A1DAF001727B4 /* HorizontalScroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalScroller.h; sourceTree = "<group>"; };
+		64970391202A1DAF001727B4 /* HorizontalScroller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalScroller.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 			children = (
 				649703802029EBA4001727B4 /* AlbumView.h */,
 				649703812029EBA4001727B4 /* AlbumView.m */,
+				64970390202A1DAF001727B4 /* HorizontalScroller.h */,
+				64970391202A1DAF001727B4 /* HorizontalScroller.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 				649703822029EBA4001727B4 /* AlbumView.m in Sources */,
 				6497038B2029EFEB001727B4 /* PersistencyManager.m in Sources */,
 				649703882029EF21001727B4 /* LibraryAPI.m in Sources */,
+				64970392202A1DAF001727B4 /* HorizontalScroller.m in Sources */,
 				450EECD917A9B03A00957F62 /* ViewController.m in Sources */,
 				6497038E2029FE72001727B4 /* Album+TableRepresentation.m in Sources */,
 				6497037F2029EAF7001727B4 /* Album.m in Sources */,
