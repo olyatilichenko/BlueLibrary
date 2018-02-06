@@ -18,6 +18,11 @@
 		450EECD617A9B03A00957F62 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 450EECD517A9B03A00957F62 /* Default-568h@2x.png */; };
 		450EECD917A9B03A00957F62 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 450EECD817A9B03A00957F62 /* ViewController.m */; };
 		450EECE517A9B05E00957F62 /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 450EECE417A9B05E00957F62 /* HTTPClient.m */; };
+		6497037F2029EAF7001727B4 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 6497037E2029EAF7001727B4 /* Album.m */; };
+		649703822029EBA4001727B4 /* AlbumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 649703812029EBA4001727B4 /* AlbumView.m */; };
+		649703882029EF21001727B4 /* LibraryAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 649703872029EF21001727B4 /* LibraryAPI.m */; };
+		6497038B2029EFEB001727B4 /* PersistencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6497038A2029EFEB001727B4 /* PersistencyManager.m */; };
+		6497038E2029FE72001727B4 /* Album+TableRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6497038D2029FE72001727B4 /* Album+TableRepresentation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,16 @@
 		450EECD817A9B03A00957F62 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		450EECE317A9B05E00957F62 /* HTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPClient.h; sourceTree = "<group>"; };
 		450EECE417A9B05E00957F62 /* HTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
+		6497037D2029EAF7001727B4 /* Album.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		6497037E2029EAF7001727B4 /* Album.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		649703802029EBA4001727B4 /* AlbumView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlbumView.h; sourceTree = "<group>"; };
+		649703812029EBA4001727B4 /* AlbumView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlbumView.m; sourceTree = "<group>"; };
+		649703862029EF21001727B4 /* LibraryAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryAPI.h; sourceTree = "<group>"; };
+		649703872029EF21001727B4 /* LibraryAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LibraryAPI.m; sourceTree = "<group>"; };
+		649703892029EFEB001727B4 /* PersistencyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersistencyManager.h; sourceTree = "<group>"; };
+		6497038A2029EFEB001727B4 /* PersistencyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistencyManager.m; sourceTree = "<group>"; };
+		6497038C2029FE72001727B4 /* Album+TableRepresentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Album+TableRepresentation.h"; sourceTree = "<group>"; };
+		6497038D2029FE72001727B4 /* Album+TableRepresentation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Album+TableRepresentation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +99,10 @@
 		450EECC517A9B03A00957F62 /* BlueLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				649703852029ECF1001727B4 /* Controller */,
+				649703842029ECE9001727B4 /* View */,
+				649703832029ECDE001727B4 /* Model */,
 				450EECE217A9B04400957F62 /* API */,
-				450EECD717A9B03A00957F62 /* ViewController.h */,
-				450EECD817A9B03A00957F62 /* ViewController.m */,
 				450EECCE17A9B03A00957F62 /* AppDelegate.h */,
 				450EECCF17A9B03A00957F62 /* AppDelegate.m */,
 				450EECC617A9B03A00957F62 /* Supporting Files */,
@@ -113,8 +129,41 @@
 			children = (
 				450EECE317A9B05E00957F62 /* HTTPClient.h */,
 				450EECE417A9B05E00957F62 /* HTTPClient.m */,
+				649703862029EF21001727B4 /* LibraryAPI.h */,
+				649703872029EF21001727B4 /* LibraryAPI.m */,
+				649703892029EFEB001727B4 /* PersistencyManager.h */,
+				6497038A2029EFEB001727B4 /* PersistencyManager.m */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		649703832029ECDE001727B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6497037D2029EAF7001727B4 /* Album.h */,
+				6497037E2029EAF7001727B4 /* Album.m */,
+				6497038C2029FE72001727B4 /* Album+TableRepresentation.h */,
+				6497038D2029FE72001727B4 /* Album+TableRepresentation.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		649703842029ECE9001727B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				649703802029EBA4001727B4 /* AlbumView.h */,
+				649703812029EBA4001727B4 /* AlbumView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		649703852029ECF1001727B4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				450EECD817A9B03A00957F62 /* ViewController.m */,
+				450EECD717A9B03A00957F62 /* ViewController.h */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,7 +233,12 @@
 			files = (
 				450EECCC17A9B03A00957F62 /* main.m in Sources */,
 				450EECD017A9B03A00957F62 /* AppDelegate.m in Sources */,
+				649703822029EBA4001727B4 /* AlbumView.m in Sources */,
+				6497038B2029EFEB001727B4 /* PersistencyManager.m in Sources */,
+				649703882029EF21001727B4 /* LibraryAPI.m in Sources */,
 				450EECD917A9B03A00957F62 /* ViewController.m in Sources */,
+				6497038E2029FE72001727B4 /* Album+TableRepresentation.m in Sources */,
+				6497037F2029EAF7001727B4 /* Album.m in Sources */,
 				450EECE517A9B05E00957F62 /* HTTPClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +354,7 @@
 				450EECE117A9B03A00957F62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
