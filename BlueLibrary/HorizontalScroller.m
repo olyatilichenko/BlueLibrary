@@ -100,5 +100,19 @@
     [scroller setContentOffset:CGPointMake(xFinal, 0) animated:YES];
     [self.delegate horizontalScroller:self clickedViewAtIndex:viewIndex];
 }
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    if (!decelerate)
+    {
+        [self centerCurrentView];
+    }
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    [self centerCurrentView];
+}
+
 @end
 
